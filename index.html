@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Abdullah - Laravel Developer</title>
+    <!-- Google Font: Montserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <!-- Basic favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+    <style>
+      * {
+        font-family: "Montserrat", sans-serif;
+      }
+    </style>
+  </head>
+  <body data-theme="light">
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="logo">Abdullah</div>
+        <ul class="nav-menu">
+          <li><a href="#home" class="nav-link">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+          <li>
+            <button class="theme-toggle" onclick="toggleTheme()">
+              <i class="fas fa-moon" id="theme-icon"></i>
+              <span id="theme-text">Dark</span>
+            </button>
+          </li>
+        </ul>
+        <button class="mobile-menu-toggle">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="hero-container">
+        <div class="hero-content">
+          <h1 class="hero-title">Hi, I'm Abdullah</h1>
+          <p class="hero-subtitle">php Laravel Developer</p>
+          <p class="hero-description">
+            I create robust, scalable web applications using Laravel. Passionate
+            about clean code, efficient backend logic, and modern frontend
+            integration, delivering secure and high-performance solutions that
+            provide exceptional user experiences.
+          </p>
+          <div class="hero-buttons">
+            <a href="#projects" class="btn btn-primary">
+              <i class="fas fa-rocket"></i>
+              View Projects
+            </a>
+            <a
+              href="mailto:abdullahtasleem6@gmail.com"
+              class="btn btn-secondary"
+            >
+              <i class="fas fa-envelope"></i>
+              Get In Touch
+            </a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <div class="profile-image floating">
+            <img src="images/ab.jpg" alt="abdullah-img" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About/Skills Section -->
+    <section id="about" class="section">
+      <h2 class="section-title">WHAT I DO</h2>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <div class="skill-icon">
+            <i class="fas fa-server"></i>
+          </div>
+          <h3 class="skill-title">Laravel Development</h3>
+          <p class="skill-description">
+            Developing robust, scalable, and secure web applications using
+            Laravel, tailored to meet modern business needs.
+          </p>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">
+            <i class="fas fa-cogs"></i>
+          </div>
+          <h3 class="skill-title">API Development</h3>
+          <p class="skill-description">
+            Building RESTful APIs for seamless integration between frontend and
+            backend, enabling dynamic and efficient applications.
+          </p>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">
+            <i class="fas fa-code"></i>
+          </div>
+          <h3 class="skill-title">Clean & Scalable Code</h3>
+          <p class="skill-description">
+            Writing maintainable, scalable, and well-documented code following
+            best practices and modern design patterns.
+          </p>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">
+            <i class="fas fa-globe"></i>
+          </div>
+          <h3 class="skill-title">Full-Stack Web Solutions</h3>
+          <p class="skill-description">
+            Creating complete web solutions with powerful backend logic, smooth
+            frontend integration, and database management.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+      <h2 class="section-title">Live Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <div class="project-image">
+            <img src="images/online-tools.png" alt="online-text-tool-image" />
+          </div>
+          <a
+            href="https://onlinetexttools.io"
+            target="_blank"
+            style="text-decoration: none; color: inherit"
+          >
+            <div class="project-content">
+              <h3 class="project-title">Online Text Tools</h3>
+              <p class="project-description">
+                OnlineTextTools is a comprehensive, browser-based collection of
+                text manipulation utilities designed for developers, writers,
+                and everyday users. The platform offers a suite of tools that
+                perform a wide range of text operations, including
+                transformation, analysis, encoding, formatting, cleaning, and
+                conversion.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">Laravel</span>
+                <span class="tech-tag">Mysql</span>
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">MVC Architecture</span>
+                <span class="tech-tag">SEO Optimized</span>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="project-card">
+          <div class="project-image">
+            <img src="images/inno_pak.png" alt="inno-pak" />
+          </div>
+          <a
+            href="https://innopak.com"
+            target="_blank"
+            style="text-decoration: none; color: inherit"
+          >
+            <div class="project-content">
+              <h3 class="project-title">Inno Pak</h3>
+              <p class="project-description">
+                InnoPak is a modern, product-focused packaging website designed
+                to showcase a wide range of sustainable and food-service
+                packaging solutions. The platform presents an extensive catalog
+                including bakery cartons, beverage carriers, compostable
+                containers, paper cutlery, eco-friendly cups, bags, and
+                specialty packaging for retail and food service industries.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">Wordpress</span>
+                <span class="tech-tag">Custom Plugin Development</span>
+                <span class="tech-tag">PHP</span>
+                <span class="tech-tag">MySQL</span>
+                <span class="tech-tag">Packaging Industry Website</span>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="project-card">
+          <div class="project-image">
+            <img src="images/qr-code.png" alt="qr-code" />
+          </div>
+          <a
+            href="http://static-qr-code.com/"
+            target="_blank"
+            style="text-decoration: none; color: inherit"
+          >
+            <div class="project-content">
+              <h3 class="project-title">Static QR Code</h3>
+              <p class="project-description">
+                Static QR Code is a lightweight, user-friendly web platform that
+                allows users to generate permanent QR codes instantly. The
+                system enables the creation of QR codes for URLs, text, contact
+                information, and other static data that does not change over
+                time. Once generated, the QR code remains fixed and does not
+                require any backend updates or redirection services.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">QR Code Generator</span>
+                <span class="tech-tag">Laravel</span>
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">PHP</span>
+                <span class="tech-tag">MySQL</span>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="project-card">
+          <div class="project-image">
+            <img src="images/convert-kit.png" alt="easy-convert-kit" />
+          </div>
+          <a
+            href="#"
+            target="_blank"
+            style="text-decoration: none; color: inherit"
+          >
+            <div class="project-content">
+              <h3 class="project-title">EasyConvertKit</h3>
+              <p class="project-description">
+                EasyConvertKit is a comprehensive, web-based file conversion
+                platform designed to handle a wide range of media and document
+                formats with ease. The website provides powerful tools for video
+                and audio conversion, along with dedicated converters for
+                documents, images, presentations, and spreadsheets. It allows
+                users to quickly transform files between different formats
+                without installing any software.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">Laravel</span>
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">PHP</span>
+                <span class="tech-tag">MySQL</span>
+                <span class="tech-tag">Audio/Video Convertion</span>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+      <h2 class="section-title">Also Worked On</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <div class="project-image">
+            <img src="images/Ecommerce .png" alt="#" />
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">E-Commerce Store</h3>
+            <p class="project-description">
+              I developed a full-featured e-commerce platform using Laravel,
+              focused on selling furniture products through a modern and
+              user-friendly interface. The system includes clearly defined user
+              and admin roles, ensuring secure access control and efficient
+              store management. The platform supports payment processing via
+              Stripe, and users can receive real-time notifications through
+              Pusher.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">Laravel</span>
+              <!-- <span class="tech-tag">Authentication</span> -->
+              <span class="tech-tag">Stripe Payment Gateway</span>
+              <span class="tech-tag">Pusher</span>
+              <span class="tech-tag">Role-Based Authentication</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-image">
+            <img src="images/job-portal.png" alt="image" />
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Job Finder</h3>
+            <p class="project-description">
+              I built a dynamic job portal similar to Indeed using Laravel, SQL,
+              and AJAX, featuring three distinct roles: Admin, Company, and Job
+              Seeker. Job seekers can search, filter, and apply for jobs in real
+              time, while companies can post and manage job listings
+              efficiently. The admin has full control over the platform,
+              managing users, jobs, and system settings.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">Laravel</span>
+              <span class="tech-tag">Mysql</span>
+              <span class="tech-tag">AJAX</span>
+              <span class="tech-tag">Admin Dashboard</span>
+              <span class="tech-tag">Notification</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- <div class="project-card">
+          <div class="project-image">
+            <img src="bloging (1).png" alt="img" />
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Bloging website</h3>
+            <p class="project-description">
+              A dynamic platform where users can read, write, and comment on
+              blog posts. The website includes features for both guests and
+              registered users
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">Laravel</span>
+              <span class="tech-tag">Mysql</span>
+              <span class="tech-tag">Admin Dashboard</span>
+            </div>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-image">
+            <img src="trade app.png" alt="image" />
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Trade Mobile App</h3>
+            <p class="project-description">
+              I built a real-world trading platform using Laravel, where users
+              can like products, get matches, and trade items. I developed the
+              full backend with REST APIs, controllers, authentication, and
+              database design, handling product management, trade status
+              (accept/reject), and notifications.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">Laravel+Flutter</span>
+              <span class="tech-tag">Fcm</span>
+              <span class="tech-tag">Nominatim</span>
+              <span class="tech-tag">REST API</span>
+              <span class="tech-tag">SMTP</span>
+            </div>
+          </div>
+        </div> -->
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="footer">
+      <div class="footer-container">
+        <h3 class="footer-title">Let's Work Together</h3>
+        <p>Ready to bring your website idea to life? Let's connect!</p>
+
+        <div class="social-links">
+          <a
+            href="https://github.com/Abdullah-Tasleem"
+            class="social-link"
+            title="GitHub"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="fab fa-github"></i>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/muhammad-hamad-39ab1237a/"
+            class="social-link"
+            title="LinkedIn"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a
+            href="https://www.instagram.com/_abdullah_tasleem_/"
+            class="social-link"
+            title="Instagram"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="fab fa-instagram"></i>
+          </a>
+          <!-- <a
+            href="https://www.youtube.com/@flutterwithmohsin"
+            class="social-link"
+            title="Youtube"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="fab fa-youtube"></i>
+          </a> -->
+          <a
+            href="https://wa.me/923117079634"
+            class="social-link"
+            title="Whatsapp"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="fab fa-whatsapp"></i>
+          </a>
+          <a
+            href="mailto:abdullahtasleem6@gmail.com"
+            class="social-link"
+            title="Email"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="fas fa-envelope"></i>
+          </a>
+        </div>
+
+        <div class="footer-text">
+          <p>
+            &copy; 2025 , Crafted with
+            <i class="fas fa-heart" style="color: red"></i> by Abdullah Tasleem.
+            All Rights Reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // Theme Toggle Functionality
+      function toggleTheme() {
+        const body = document.body;
+        const themeIcon = document.getElementById("theme-icon");
+        const themeText = document.getElementById("theme-text");
+
+        const currentTheme = body.getAttribute("data-theme");
+        const newTheme = currentTheme === "light" ? "dark" : "light";
+
+        body.setAttribute("data-theme", newTheme);
+
+        if (newTheme === "dark") {
+          themeIcon.className = "fas fa-sun";
+          themeText.textContent = "Light";
+        } else {
+          themeIcon.className = "fas fa-moon";
+          themeText.textContent = "Dark";
+        }
+
+        // Save theme preference (commented out for Claude artifacts)
+        // localStorage.setItem('theme', newTheme);
+      }
+
+      // Initialize theme on page load
+      document.addEventListener("DOMContentLoaded", function () {
+        // Default to light theme in artifacts
+        const savedTheme = "light"; // localStorage.getItem('theme') || 'light';
+        document.body.setAttribute("data-theme", savedTheme);
+
+        const themeIcon = document.getElementById("theme-icon");
+        const themeText = document.getElementById("theme-text");
+
+        if (savedTheme === "dark") {
+          themeIcon.className = "fas fa-sun";
+          themeText.textContent = "Light";
+        } else {
+          themeIcon.className = "fas fa-moon";
+          themeText.textContent = "Dark";
+        }
+      });
+    </script>
+
+    <script>
+      const mobileToggle = document.querySelector(".mobile-menu-toggle");
+      const navMenu = document.querySelector(".nav-menu");
+
+      mobileToggle.addEventListener("click", () => {
+        navMenu.classList.toggle("active");
+      });
+
+      // Optional: close menu when clicking a link
+      document.querySelectorAll(".nav-link").forEach((link) => {
+        link.addEventListener("click", () => {
+          navMenu.classList.remove("active");
+        });
+      });
+    </script>
+  </body>
+</html>
